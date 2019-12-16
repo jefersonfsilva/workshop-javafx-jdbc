@@ -12,9 +12,9 @@ public class Seller implements Serializable {
 	private String email;
 	private Date birthDate;
 	private Double baseSalary;
-	
+
 	private Department department;
-	
+
 	public Seller() {
 	}
 
@@ -95,14 +95,19 @@ public class Seller implements Serializable {
 		if (id == null) {
 			if (other.id != null)
 				return false;
-		} else if (!id.equals(other.id))
+		} 
+		else if (!id.equals(other.id))
 			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthDate=" + birthDate + ", baseSalary="
-				+ baseSalary + ", department=" + department + "]";
+		return "Seller [id=" + id 
+				+ ", name=" + name 
+				+ ", email=" + email 
+				+ ", birthDate=" + birthDate 
+				+ ", baseSalary=" + baseSalary 
+				+ ", department=" + department + "]";
 	}
 }

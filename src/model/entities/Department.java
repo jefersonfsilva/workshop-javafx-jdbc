@@ -8,7 +8,7 @@ public class Department implements Serializable {
 
 	private Integer id;
 	private String name;
-	
+
 	public Department() {
 	}
 
@@ -53,7 +53,8 @@ public class Department implements Serializable {
 		if (id == null) {
 			if (other.id != null)
 				return false;
-		} else if (!id.equals(other.id))
+		} 
+		else if (!id.equals(other.id))
 			return false;
 		return true;
 	}
